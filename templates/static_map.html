@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Google Map Static</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <img id="static_map" src="https://maps.googleapis.com/maps/api/staticmap?&zoom=13&size=1000x1000&maptype=roadmap
+        &markers=color:red%7Clabel:V%7C41.980262,-87.668452&
+        &key=AIzaSyAJrIDD1eplkghw2M3MEj1E5whTHzWRuOM" alt="Error 404 Not Found">
+
+        <script src="{{ url_for('static', filename='js/check_bus_static.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/notify.js') }}"></script>
+    </body>
+</html>

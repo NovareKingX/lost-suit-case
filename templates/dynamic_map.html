@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Google Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/map.css') }}">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/notify.js') }}"></script>
+  </head>
+
+  <body>
+    
+    <!-- Div for map -->
+    <div id="map" class="map"></div>
+
+    <!-- Initialize google dynamic map -->
+
+    <!-- AJAX get request -->
+    <script src="{{ url_for('static', filename='js/check_bus_dynamic.js') }}"></script>
+
+    <!-- Set up API Key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJrIDD1eplkghw2M3MEj1E5whTHzWRuOM&callback=initMap"async defer></script>
+  
+  </body>
+</html>

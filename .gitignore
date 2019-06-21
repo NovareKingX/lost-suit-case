@@ -1,0 +1,6 @@
+*.pyc
+*~
+flaskenv
+bus_data.xml
+__pycache__
+.vscode
